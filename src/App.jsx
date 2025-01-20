@@ -1,12 +1,19 @@
-
 import './App.css'
-
+import Banner from './components/Bannner/Banner';
+import CoinTable from './components/CoinTable/CoinTable';
+import Navbar from './components/Navbar/Navbar';
 function App() {
  
 
   return (
- <h1>hello</h1>
-  )
+  <>
+   <Navbar />
+   <Banner />
+  <CoinTable />
+ 
+  
+  </>
+  );
 }
 
-export default App
+export default App;
