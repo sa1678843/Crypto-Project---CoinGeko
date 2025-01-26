@@ -22,7 +22,7 @@ function CoinTable(){
      });
 
     function handleCoinRedirect(id){
-navigate(`1/details/${id}`);
+navigate(`/details/${id}`);
     }
     
      
