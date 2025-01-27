@@ -4,16 +4,20 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 import { fetchCoinDetails } from "../services/fetchCoinDetails";
 import useStore from "../zustangState/store";
+import PageLoader from '../components/PageLoader/PageLoader'
+
 function CoinDetailPage() {
+    
   const { coinId } = useParams();
-  const {currency} = useStore()
+  const {currency} = useStore();
+
   const {isError, isLoading, data: coin } = useQuery(["coin", coinId], () => fetchCoinDetails(coinId), {
     cacheTime: 1000 * 60 * 2, // 2 minutes
     staleTime: 1000 * 60 * 2, // 2 minutes
   });
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <PageLoader />
   }
 
   if (isError) {

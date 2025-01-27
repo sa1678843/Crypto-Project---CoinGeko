@@ -4,6 +4,8 @@ import { useQuery } from "@tanstack/react-query";
 // import { CurrencyContext } from "../../context/CurrencyContext";
 import useStore from "../../zustangState/store";
 import { useNavigate } from "react-router-dom";
+
+import PageLoader from '../PageLoader/PageLoader'
 function CoinTable(){
 
 
@@ -28,6 +30,10 @@ navigate(`/details/${id}`);
      
      if(isError){
       return <div>Error: {error.message}</div>
+     }
+
+     if(isLoading){
+      return <PageLoader />
      }
     
     return (

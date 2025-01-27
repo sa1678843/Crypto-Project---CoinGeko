@@ -1,16 +1,31 @@
 import { Route, Routes } from "react-router-dom";
-import CoinDetailPage from "../../pages/CoinsDetailPage";
-import Home from "../../pages/Home";
-import MainLayout from "../../pages/Layout";
+import { lazy, Suspense } from "react";
+import MainLayout from '../../pages/Layout';
+import PageLoader from '../PageLoader/PageLoader'
+
+const Home = lazy(() => import('../../pages/Home'));
+const CoinDetailPage = lazy(() => import('../../pages/CoinsDetailPage'));  // Removed the leading /
 
 function Routing() {
-    return (
-        <Routes>
-            <Route path="/" element={<MainLayout />}>
-                <Route index element={<Home />} />
-                <Route path="/details/:coinId" element={<CoinDetailPage />} />
-            </Route>
-        </Routes>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={
+            <Suspense fallback={<PageLoader width={400} height={200} />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route  path="/details/:coinId"  element={
+
+            <Suspense fallback={<PageLoader width={400} height={200} />}>
+              <CoinDetailPage />
+            </Suspense>
+          }
+        />
+      </Route>
+    </Routes>
+  );
 }
+
 export default Routing;
