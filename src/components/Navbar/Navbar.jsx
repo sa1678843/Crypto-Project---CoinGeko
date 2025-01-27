@@ -1,10 +1,15 @@
 // import { useContext } from "react";
 // import { CurrencyContext } from "../../context/CurrencyContext";
+import { useNavigate } from "react-router-dom";
 import useStore from "../../zustangState/store";
 
 function Navbar(){
-
   const {setCurrency} = useStore() 
+  const navigate = useNavigate();
+function goToHome(){
+navigate('/');
+}
+
   // const {setCurrency} = useContext(CurrencyContext);
 return(
     <div className="navbar bg-base-100">
@@ -32,8 +37,8 @@ return(
         </ul>
       </div>
     </div>
-    <div className="navbar-center">
-      <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div onClick={goToHome} className="navbar-center">
+      <a className="btn btn-ghost text-xl">crypto Tracker</a>
     </div>
     <div className="navbar-end">
       <button className="btn btn-ghost btn-circle">
