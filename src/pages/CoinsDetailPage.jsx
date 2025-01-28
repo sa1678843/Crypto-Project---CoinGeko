@@ -56,7 +56,7 @@ function CoinDetailPage() {
 
         
       </div>
-      <div className="md:w-2/3 w-full p-6">
+      <div className="md:w-2/3 w-full">
               <CoinInfoContainer coinId={coinId}/>
       </div>
     </div>

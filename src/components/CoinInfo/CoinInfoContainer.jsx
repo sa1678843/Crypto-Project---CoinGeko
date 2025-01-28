@@ -11,7 +11,7 @@ function CoinInfoContainer({ coinId }){
     const {currency} = useStore();
 
     const[days, setDays] = useState (7);
-    const [interval, setCoinInterval] =useState('');
+    const [interval, setCoinInterval] =useState('daily');
 
 
 const {data: historicData, isLoading, isError}
@@ -34,7 +34,9 @@ if(isError){
     <CoinInfo 
     historicData={historicData}
     setDays={setDays} 
-    setInterval={setCoinInterval}
+    setCoinInterval={setCoinInterval}
+    days={days}
+    currency={currency}
     />
 
 
