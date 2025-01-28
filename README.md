@@ -10,7 +10,6 @@ A feature-rich cryptocurrency dashboard built using the **CoinGecko API**, desig
 - **Market Analysis:** Gain valuable insights into market trends with data on trading volume, price changes, and market capitalization.
 - **Portfolio Management:** Manage and track your cryptocurrency holdings efficiently with an easy-to-use interface.
 - **Interactive Charts:** Visualize historical trends and performance using dynamic and customizable charts powered by **Chart.js**.
-- **Search and Filters:** Quickly search for specific cryptocurrencies and filter results based on parameters such as market cap, price, or trading volume.
 - **Responsive Design:** Fully responsive design ensures an optimal user experience on both desktop and mobile devices.
 
 ---
@@ -20,9 +19,6 @@ A feature-rich cryptocurrency dashboard built using the **CoinGecko API**, desig
 ### **Frontend:**
 - **React.js:** For building the user interface and managing the application state.
 - **TailwindCSS:** For designing a clean, responsive, and modern UI.
-
-### **Backend:**
-- **Node.js & Express.js:** For creating a lightweight and efficient backend server to handle API requests and routing.
 
 ### **API Integration:**
 - **CoinGecko API:** For fetching real-time data on cryptocurrency prices, market trends, and historical performance.
@@ -63,7 +59,7 @@ A feature-rich cryptocurrency dashboard built using the **CoinGecko API**, desig
 
 ---
 
-## Screenshots 📸
+## Screenshots 
 
 ### **Dashboard Overview:**
 _Showcase the live price tracking and market trends on the homepage._
@@ -101,11 +97,6 @@ _Easily search and filter cryptocurrencies based on specific criteria._
 
 ---
 
-## License 📄
-
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software as per the terms of the license.
-
----
 
 ## Acknowledgements 🙌
 
@@ -119,6 +110,6 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 
 If you have any questions or suggestions, feel free to reach out!
 
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **GitHub:** [Your GitHub Profile](https://github.com/your-username)
-- **Email:** your.email@example.com
+- **LinkedIn:** [https://www.linkedin.com/in/sachin-61305wr]
+- **GitHub:** [https://github.com/sa1678843]
+- **Email:** sa1678854@gmail.com
