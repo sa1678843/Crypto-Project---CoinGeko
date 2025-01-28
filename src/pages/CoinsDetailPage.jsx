@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { fetchCoinDetails } from "../services/fetchCoinDetails";
 import useStore from "../zustangState/store";
 import PageLoader from '../components/PageLoader/PageLoader'
+import CoinInfoContainer from "../components/CoinInfo/CoinInfoContainer";
 
 function CoinDetailPage() {
     
@@ -56,8 +57,7 @@ function CoinDetailPage() {
         
       </div>
       <div className="md:w-2/3 w-full p-6">
-
-        Coin Information
+              <CoinInfoContainer coinId={coinId}/>
       </div>
     </div>
   );
