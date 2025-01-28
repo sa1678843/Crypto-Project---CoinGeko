@@ -64,18 +64,13 @@ A feature-rich cryptocurrency dashboard built using the **CoinGecko API**, desig
 ### **Dashboard Overview:**
 _Showcase the live price tracking and market trends on the homepage._
 
-![Dashboard Overview](https://via.pla![banner png](https://github.com/user-attachments/assets/f97fe6f6-fed0-479a-89a5-eef44de6e672)
-ceholder.com/800x400)
+![Screenshot 2025-01-29 024652](https://github.com/user-attachments/assets/0d6b7ef1-636e-42cd-9599-0e7b3d5a3ec4)
+
 
 ### **Interactive Charts:**
 _Visualize historical trends using dynamic and customizable charts._
 
-![Interactive Charts](https://via.placeholder.com/800x400)
-
-### **Search & Filters:**
-_Easily search and filter cryptocurrencies based on specific criteria._
-
-![Search & Filters](https://via.placeholder.com/800x400)
+![Screenshot 2025-01-29 024747](https://github.com/user-attachments/assets/6f04bd45-73be-4fa2-8b67-1a3b99b0bf31)
 
 ---
 
